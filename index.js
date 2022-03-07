@@ -16,6 +16,9 @@ app.use(
   })
 );
 
+app.use("/", (req, res) => {
+  res.send(`<h1>Welcome to Reward-System</h1>`);
+});
 app.use("/user", userRoutes);
 app.use("/reward", rewardRoutes);
 
